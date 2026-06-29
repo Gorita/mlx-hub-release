@@ -1,0 +1,15 @@
+{
+  "version": "0.1.2",
+  "notes": "",
+  "pub_date": "2026-06-29T05:19:56.689Z",
+  "platforms": {
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZ0tHN2hVODNZcWxPQmhMTEtOWGpxNks2QS9pREU4dnQrZ3pkK0FGUjRHOTM0aXUxWlh0cGlzcFhKTUorb2lYdmt3N253TjRPMW03bVZqUm03bnBZcUxNVEdVM21odUFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyNzEwMzkzCWZpbGU6bWx4LWh1Yi5hcHAudGFyLmd6ClNTSDJVZlIzdFNlSmhCRmlGeVdYL29DS0Z2emxGTk5lTUY5V0FJeWFUajdiWlRrSENDTHRpUDdJZ2dqbDJzbjVzQnpWWkNGOXZZSlFZaEFKNjBUUERRPT0K",
+      "url": "https://github.com/Gorita/mlx-hub-release/releases/download/v0.1.2/mlx-hub_aarch64.app.tar.gz"
+    },
+    "darwin-aarch64-app": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZ0tHN2hVODNZcWxPQmhMTEtOWGpxNks2QS9pREU4dnQrZ3pkK0FGUjRHOTM0aXUxWlh0cGlzcFhKTUorb2lYdmt3N253TjRPMW03bVZqUm03bnBZcUxNVEdVM21odUFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgyNzEwMzkzCWZpbGU6bWx4LWh1Yi5hcHAudGFyLmd6ClNTSDJVZlIzdFNlSmhCRmlGeVdYL29DS0Z2emxGTk5lTUY5V0FJeWFUajdiWlRrSENDTHRpUDdJZ2dqbDJzbjVzQnpWWkNGOXZZSlFZaEFKNjBUUERRPT0K",
+      "url": "https://github.com/Gorita/mlx-hub-release/releases/download/v0.1.2/mlx-hub_aarch64.app.tar.gz"
+    }
+  }
+}
