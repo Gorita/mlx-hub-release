@@ -44,8 +44,26 @@ xattr -d com.apple.quarantine /Applications/mlx-hub.app
 
 ---
 
-## 🤝 외부 앱 연동
-MLX Hub는 단순히 모델을 켜는 것에 그치지 않고, 로컬의 다른 앱(예: daddy-keep-working 등)과 연동되어 작동하도록 설계되었습니다. 백그라운드에 켜두기만 하면 연동된 앱들이 알아서 이 서버를 찾아 로컬 AI를 활용합니다.
+## 📡 외부 앱 연동 가이드 (Developer Guide)
+
+외부 앱(예: `daddy-keep-working` 등)에서 MLX Hub를 제어하거나 상태를 구독하려면 다음 UDS 및 URI 규격을 사용하십시오.
+
+### 1. 앱 실행 트리거 (Custom URI Scheme)
+앱이 설치된 경우, 아래 스킴을 호출하여 앱을 활성화하거나 실행할 수 있습니다.
+- **URI Scheme**: `mlx-hub://`
+- **사용 예시 (Terminal)**: `open mlx-hub://`
+
+### 2. 실시간 상태 구독 (Unix Domain Socket)
+MLX 서버의 상태가 변경될 때마다 실시간으로 데이터를 푸시받을 수 있습니다.
+- **소켓 경로**: `/tmp/mlx-hub.sock`
+- **데이터 형식**: Newline-delimited JSON (NDJSON)
+- **통신 플로우**:
+  1. 소켓 연결 즉시 **현재 최신 상태** 1회 수신.
+  2. 이후 서버 시작/정지/설치 등 **상태 변화 발생 시마다** 새로운 JSON 패킷 수신.
+- **전송 데이터 예시**:
+  ```json
+  {"status":{"kind":"ready"},"model":"mlx-community/gemma-4-e2b-it-qat-OptiQ-4bit","port":8765}
+  ```
 
 ---
 
