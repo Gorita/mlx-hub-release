@@ -46,3 +46,11 @@ xattr -d com.apple.quarantine /Applications/mlx-hub.app
 
 ## 🤝 외부 앱 연동
 MLX Hub는 단순히 모델을 켜는 것에 그치지 않고, 로컬의 다른 앱(예: daddy-keep-working 등)과 연동되어 작동하도록 설계되었습니다. 백그라운드에 켜두기만 하면 연동된 앱들이 알아서 이 서버를 찾아 로컬 AI를 활용합니다.
+
+---
+
+## 📄 License
+이 소프트웨어의 실행 파일 및 스크립트는 **MIT License** 하에 제공됩니다.
+소프트웨어 배포 파일 자체를 자유롭게 사용할 수 있으나, 저작권 고지서를 포함해야 합니다.
+
+Copyright (c) 2026 GORITA. All rights reserved.
