@@ -7,7 +7,7 @@ echo "---------------------------------------"
 # 1. 임시 작업 폴더 생성 및 최신 DMG 다운로드
 TEMP_DIR=$(mktemp -d)
 DMG_PATH="$TEMP_DIR/mlx-hub.dmg"
-REPO="Gorita/mlx-hub"
+REPO="Gorita/mlx-hub-release"
 
 echo "🔍 GitHub 릴리즈 저장소에서 최신 버전을 찾는 중..."
 # GitHub API를 통해 최신 릴리즈의 .dmg 다운로드 링크 획득
@@ -15,7 +15,7 @@ LATEST_URL=$(curl -s https://api.github.com/repos/$REPO/releases/latest | grep "
 
 if [ -z "$LATEST_URL" ]; then
     echo "⚠️ 최신 릴리즈 정보를 가져오지 못했습니다. 폴백 주소로 진입합니다."
-    LATEST_URL="https://github.com/Gorita/mlx-hub/releases/download/v0.2.0/mlx-hub_0.2.0_aarch64.dmg"
+    LATEST_URL="https://github.com/Gorita/mlx-hub-release/releases/download/v0.2.4/mlx-hub_0.2.4_aarch64.dmg"
 fi
 
 echo "📥 DMG 파일 다운로드 중..."
