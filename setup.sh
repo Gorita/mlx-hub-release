@@ -9,31 +9,31 @@ TEMP_DIR=$(mktemp -d)
 DMG_PATH="$TEMP_DIR/mlx-hub.dmg"
 REPO="Gorita/mlx-hub-release"
 
-# 0. python3 설치 확인 및 자동 설치
-echo "🐍 Python3 설치 여부를 확인하는 중..."
-if ! command -v python3 &>/dev/null; then
-    echo "⚠️ Python3가 설치되어 있지 않습니다."
+# 0. python3.13 설치 확인 및 자동 설치 (MLX 호환성 보장)
+echo "🐍 Python 3.13 설치 여부를 확인하는 중..."
+if ! command -v python3.13 &>/dev/null; then
+    echo "⚠️ Python 3.13이 설치되어 있지 않습니다."
     if command -v brew &>/dev/null; then
-        echo "🍺 Homebrew를 감지했습니다. python3를 자동으로 설치합니다..."
-        brew install python3
-        echo "✅ Python3 설치 완료."
+        echo "🍺 Homebrew를 감지했습니다. python@3.13을 자동으로 설치합니다..."
+        brew install python@3.13
+        echo "✅ Python 3.13 설치 완료."
     else
         echo ""
-        echo "❌ Python3 및 Homebrew 모두 감지되지 않았습니다."
-        echo "   MLX Hub 실행에는 Python3가 필요합니다."
-        echo "   아래 방법 중 하나로 먼저 Python3를 설치해 주세요:"
+        echo "❌ Python 3.13 및 Homebrew 모두 감지되지 않았습니다."
+        echo "   MLX Hub 실행에는 Python 3.13이 필요합니다."
+        echo "   아래 방법 중 하나로 먼저 Python 3.13을 설치해 주세요:"
         echo ""
-        echo "   [방법 1] Homebrew를 설치한 뒤 python3 설치:"
+        echo "   [방법 1] Homebrew를 설치한 뒤 python@3.13 설치:"
         echo "   /bin/bash -c \"\$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\""
-        echo "   brew install python3"
+        echo "   brew install python@3.13"
         echo ""
         echo "   [방법 2] python.org에서 직접 다운로드:"
-        echo "   https://www.python.org/downloads/macos/"
+        echo "   https://www.python.org/downloads/release/python-31313/"
         echo ""
         exit 1
     fi
 else
-    echo "✅ Python3 확인 완료: $(python3 --version)"
+    echo "✅ Python 3.13 확인 완료: $(python3.13 --version)"
 fi
 
 echo "🔍 GitHub 릴리즈 저장소에서 최신 버전을 찾는 중..."
