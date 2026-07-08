@@ -42,7 +42,7 @@ LATEST_URL=$(curl -s https://api.github.com/repos/$REPO/releases/latest | grep "
 
 if [ -z "$LATEST_URL" ]; then
     echo "⚠️ 최신 릴리즈 정보를 가져오지 못했습니다. 폴백 주소로 진입합니다."
-    LATEST_URL="https://github.com/Gorita/mlx-hub-release/releases/download/v0.2.4/mlx-hub_0.2.4_aarch64.dmg"
+    LATEST_URL="https://github.com/Gorita/mlx-hub-release/releases/download/v0.2.6/mlx-hub_0.2.6_aarch64.dmg"
 fi
 
 echo "📥 DMG 파일 다운로드 중..."
