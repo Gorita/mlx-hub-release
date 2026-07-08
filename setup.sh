@@ -9,6 +9,33 @@ TEMP_DIR=$(mktemp -d)
 DMG_PATH="$TEMP_DIR/mlx-hub.dmg"
 REPO="Gorita/mlx-hub-release"
 
+# 0. python3 설치 확인 및 자동 설치
+echo "🐍 Python3 설치 여부를 확인하는 중..."
+if ! command -v python3 &>/dev/null; then
+    echo "⚠️ Python3가 설치되어 있지 않습니다."
+    if command -v brew &>/dev/null; then
+        echo "🍺 Homebrew를 감지했습니다. python3를 자동으로 설치합니다..."
+        brew install python3
+        echo "✅ Python3 설치 완료."
+    else
+        echo ""
+        echo "❌ Python3 및 Homebrew 모두 감지되지 않았습니다."
+        echo "   MLX Hub 실행에는 Python3가 필요합니다."
+        echo "   아래 방법 중 하나로 먼저 Python3를 설치해 주세요:"
+        echo ""
+        echo "   [방법 1] Homebrew를 설치한 뒤 python3 설치:"
+        echo "   /bin/bash -c \"\$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\""
+        echo "   brew install python3"
+        echo ""
+        echo "   [방법 2] python.org에서 직접 다운로드:"
+        echo "   https://www.python.org/downloads/macos/"
+        echo ""
+        exit 1
+    fi
+else
+    echo "✅ Python3 확인 완료: $(python3 --version)"
+fi
+
 echo "🔍 GitHub 릴리즈 저장소에서 최신 버전을 찾는 중..."
 # GitHub API를 통해 최신 릴리즈의 .dmg 다운로드 링크 획득
 LATEST_URL=$(curl -s https://api.github.com/repos/$REPO/releases/latest | grep "browser_download_url.*dmg" | cut -d '"' -f 4)
