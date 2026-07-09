@@ -1,15 +1,15 @@
 {
-  "version": "0.2.13",
+  "version": "0.2.14",
   "notes": "See GitHub Releases for update details.",
-  "pub_date": "2026-07-09T02:39:44Z",
+  "pub_date": "2026-07-09T05:01:53Z",
   "platforms": {
     "darwin-aarch64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZ0tHN2hVODNZcXFyeGJSSmpDRTV1YjFHWXo0RHlCcGsxM0JnRHhQOGV0RkE1cWVRbWtXMjZDU0h2TVhJY29xTlBHMUcyT1Nva0pyRVdKcnJRWGx4Ukxxbnc1SmQ2TmdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNTY0Nzc4CWZpbGU6bWx4LWh1Yi5hcHAudGFyLmd6Ci9uY21sZlFseXFOUUd6YUVBQ291YzZQRERjS0dJemx4NjlCSmZ2aXJMM1FTdnpRKzlYNDJSR05uYmc5RHNkZWpQRjdMVVlmbFgwZDZ0Rk5hYkE1K0N3PT0K",
-      "url": "https://github.com/Gorita/mlx-hub-release/releases/download/v0.2.13/mlx-hub_aarch64.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZ0tHN2hVODNZcW5GU2pEQTBYdVgweHczTE4xVWRpRmROREUzZXVMQXVOalV6cHJDLzlkblZyTjhvRWt0c29FbzRNNzcweVFndmM3eDFMUjZneDBPWHpWRDJoOWhKV0FvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNTczMzA3CWZpbGU6bWx4LWh1Yi5hcHAudGFyLmd6Ci94MlRZUFY3SVlaK2xqU1h4SklIMGlhUFdsb3FVaHBGOElOMUtJVTFxeTQ3WnRhZ0NvTGRuZ01MNkpaU05nMlFyL2tDQnhQajFpZkRLaE9lNU0rS0RRPT0K",
+      "url": "https://github.com/Gorita/mlx-hub-release/releases/download/v0.2.14/mlx-hub_aarch64.app.tar.gz"
     },
     "darwin-aarch64-app": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZ0tHN2hVODNZcXFyeGJSSmpDRTV1YjFHWXo0RHlCcGsxM0JnRHhQOGV0RkE1cWVRbWtXMjZDU0h2TVhJY29xTlBHMUcyT1Nva0pyRVdKcnJRWGx4Ukxxbnc1SmQ2TmdNPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNTY0Nzc4CWZpbGU6bWx4LWh1Yi5hcHAudGFyLmd6Ci9uY21sZlFseXFOUUd6YUVBQ291YzZQRERjS0dJemx4NjlCSmZ2aXJMM1FTdnpRKzlYNDJSR05uYmc5RHNkZWpQRjdMVVlmbFgwZDZ0Rk5hYkE1K0N3PT0K",
-      "url": "https://github.com/Gorita/mlx-hub-release/releases/download/v0.2.13/mlx-hub_aarch64.app.tar.gz"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVSZ0tHN2hVODNZcW5GU2pEQTBYdVgweHczTE4xVWRpRmROREUzZXVMQXVOalV6cHJDLzlkblZyTjhvRWt0c29FbzRNNzcweVFndmM3eDFMUjZneDBPWHpWRDJoOWhKV0FvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzgzNTczMzA3CWZpbGU6bWx4LWh1Yi5hcHAudGFyLmd6Ci94MlRZUFY3SVlaK2xqU1h4SklIMGlhUFdsb3FVaHBGOElOMUtJVTFxeTQ3WnRhZ0NvTGRuZ01MNkpaU05nMlFyL2tDQnhQajFpZkRLaE9lNU0rS0RRPT0K",
+      "url": "https://github.com/Gorita/mlx-hub-release/releases/download/v0.2.14/mlx-hub_aarch64.app.tar.gz"
     }
   }
 }
