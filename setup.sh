@@ -19,18 +19,15 @@ if ! command -v python3.13 &>/dev/null; then
         echo "✅ Python 3.13 설치 완료."
     else
         echo ""
-        echo "❌ Python 3.13 및 Homebrew 모두 감지되지 않았습니다."
-        echo "   MLX Hub 실행에는 Python 3.13이 필요합니다."
-        echo "   아래 방법 중 하나로 먼저 Python 3.13을 설치해 주세요:"
+        echo "🍺 Homebrew가 없습니다. Python 3.13 공식 설치 프로그램을 다운로드합니다..."
+        PYTHON_PKG="/tmp/python-3.13.3-macos11.pkg"
+        curl -L -o "$PYTHON_PKG" "https://www.python.org/ftp/python/3.13.3/python-3.13.3-macos11.pkg"
         echo ""
-        echo "   [방법 1] Homebrew를 설치한 뒤 python@3.13 설치:"
-        echo "   /bin/bash -c \"\$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\""
-        echo "   brew install python@3.13"
+        echo "📦 설치 프로그램을 실행합니다. 화면 안내에 따라 설치를 완료해 주세요."
+        open "$PYTHON_PKG"
         echo ""
-        echo "   [방법 2] python.org에서 직접 다운로드:"
-        echo "   https://www.python.org/downloads/release/python-31313/"
-        echo ""
-        exit 1
+        echo "⏳ Python 설치가 끝나면 이 스크립트를 다시 실행해 주세요."
+        exit 0
     fi
 else
     echo "✅ Python 3.13 확인 완료: $(python3.13 --version)"
